@@ -29,7 +29,7 @@ python scripts/demo_org_setup.py
 ```
 ## Part 1: Database Queries
 1. Create and provide a `script` with `logging` to achieve each of the following:
-    - Script: [scripts/demo_org_setup.py](scripts/demo_org_setup.py), Log: [log/brewery-2021-07-15_09-14-29.096275.log](log/brewery-2021-07-15_09-14-29.096275.log)
+    - Script: [scripts/brewery.py](scripts/brewery.py), Log: [log/brewery-2021-07-15_09-14-29.096275.log](log/brewery-2021-07-15_09-14-29.096275.log)
   - We’re coming out with a new hoppy delicious IPA. To let our customers know, we need two mailing lists.
     - One that includes the email addresses of `all of our customers`
       - `Devon's Note`: Since it's a mailing list (ostenibly something we would like to access programatically), I decided to leave the output as a list of objects, and I included the `first_name` and `last_name` of the customers too. If we want just a comma-separated list of strings (email addresses only), it's quite simple to add a line or two to achieve that.
