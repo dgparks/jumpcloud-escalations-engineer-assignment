@@ -141,6 +141,6 @@ python scripts/demo_org_setup.py
   ```http
   HTTP response body: {"message":"failed to list graph associations (org=60e87fecf568ca763a3bc278,from=user:60efa55e3206b934ea7a5d0a,targets=[application,system]): must provide exactly 1 target, got 2","status":"INVALID_ARGUMENT"}
   ```
-- `filter` is a reserved keyword in python, but I see it being used as a variable name in `jcapi-python` examples
+- `filter` is a built-in function in python, but I see it being used as a variable name in `jcapi-python` examples
 - It took me longer than I'd like to admit to realize that v1 of the API is required to request a list of all users or devices. Although I now see that there is some text explaining this at the top of their respective v2 sections...it could be helpful to stub in a fake endpoint on the v2 docs with instructions and a link to the v1 endpoint.
 
