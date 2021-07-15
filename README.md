@@ -30,8 +30,8 @@ python scripts/demo_org_setup.py
 ## Part 1: Database Queries
 1. Create and provide a `script` with `logging` to achieve each of the following:
     - Script: [scripts/brewery.py](scripts/brewery.py), Log: [log/brewery-2021-07-15_09-14-29.096275.log](log/brewery-2021-07-15_09-14-29.096275.log)
-  - We’re coming out with a new hoppy delicious IPA. To let our customers know, we need two mailing lists.
-    - One that includes the email addresses of `all of our customers`
+  - [x] We’re coming out with a new hoppy delicious IPA. To let our customers know, we need two mailing lists.
+    - [x] One that includes the email addresses of `all of our customers`
       - `Devon's Note`: Since it's a mailing list (ostenibly something we would like to access programatically), I decided to leave the output as a list of objects, and I included the `first_name` and `last_name` of the customers too. If we want just a comma-separated list of strings (email addresses only), it's quite simple to add a line or two to achieve that.
       - ```json
         [
@@ -42,7 +42,7 @@ python scripts/demo_org_setup.py
         ]
         ```
           See full output here: [out/brewery-2021-07-15_09-14-29.096275.json](out/brewery-2021-07-15_09-14-29.096275.json)
-    - Another that includes only the email addresses for customers whose `favorite beer is an IPA`.
+    - [x] Another that includes only the email addresses for customers whose `favorite beer is an IPA`.
       - `Devon's Note`: Again, I interpreted this to mean "includes (at least) the email addresses, *but only for those customers whose favorite beer is an IPA*", as opposed to the more literal reading in which we return *only the email addresses*. In a production environment, I would of course seek clarification from stakeholders before unilaterally deciding which data to return.
       - ```json
         [
@@ -53,14 +53,14 @@ python scripts/demo_org_setup.py
         ]
         ```
         See full output here: [out/brewery-2021-07-15_09-14-29.096275.json](out/brewery-2021-07-15_09-14-29.096275.json)
-  - We need to gather some data on our tap rooms to show which is the `most popular location`. We need to know how many customers have frequented each location between 1/1/2021 - 4/1/2021.
+  - [x] We need to gather some data on our tap rooms to show which is the `most popular location`. We need to know how many customers have frequented each location between 1/1/2021 - 4/1/2021.
     - ```json
       [ 
         { "_id": "123 Fake Street, Denver, CO", "count": 12 }, 
         { "_id": "987 Fake Blvd, Boulder, CO", "count": 8 } 
       ]
       ```
-  - We’re trying to determine what type of beer is most popular with our customers so we can determine what our `next experimental beer` should be! Can you provide us with an array of objects that include the `beer name`, `type`, and `number of customers` where that beer is their favorite?
+  - [x] We’re trying to determine what type of beer is most popular with our customers so we can determine what our `next experimental beer` should be! Can you provide us with an array of objects that include the `beer name`, `type`, and `number of customers` where that beer is their favorite?
       - ```json
         [
           { "name": "Super Haze", "type": "Hazy IPA", "count": 115 },
@@ -74,13 +74,13 @@ python scripts/demo_org_setup.py
         ]
         ```
 2. Provide the output results for each of these requests.
-    - `See above for results and a link to the output file.`
+    - [x] `See above for results and a link to the output file.`
 
 ## Part 2: Interacting with JumpCloud
 1. Using the programming language of your choice (`Go` or `JavaScript` preferred), complete the following and provide your solution for each:
    - `Devon's Note`: Since there isn't a JS SDK, I elected to use the Python SDK to save time and avoid reinventing the wheel. I certainly *could* have written an ad hoc mini-library in JS to handle auth and endpoint connections, but that seemed a bit outside the scope of the intention here. Let me know if you'd like me to reimplement this in something other than Python.
    - View method declarations in [scripts/demo_org_setup.py](scripts/demo_org_setup.py)
-   - `Create and activate 2 Users`
+   - [x] `Create and activate 2 Users`
       - ```python
         create_and_activate_users([
           {
@@ -101,11 +101,11 @@ python scripts/demo_org_setup.py
           }
         ])
         ```
-   - `Create a Group of Users`
+   - [x] `Create a Group of Users`
       - ```python
         create_user_group('Philosophers')
         ```
-   - `Associate Users to the Group of Users`
+   - [x] `Associate Users to the Group of Users`
       - ```python
         # Get User and Group Ids
         schopenhauer_id = get_user_id_by_username('arthur.schopenhauer')
@@ -116,7 +116,7 @@ python scripts/demo_org_setup.py
         bind_user_to_user_group(schopenhauer_id, philosophers_id)
         bind_user_to_user_group(kierkegaard_id, philosophers_id)
         ```
-   - `Associate one User to the recently added system in JumpCloud`
+   - [x] `Associate one User to the recently added system in JumpCloud`
       - ```python
         my_macbook_id = get_device_id_by_name('Eos-256X.local')
         bind_user_to_device(schopenhauer_id, my_macbook_id)
@@ -126,13 +126,13 @@ python scripts/demo_org_setup.py
 
 3. Set agent logs to DEBUG on system and provide a copy of agent logs
     - `Devon's Note`: I could not find any information about setting the agent logs to DEBUG.
-    - Agent logs: [log/jcagent_2021-07-15_01-25.log](log/jcagent_2021-07-15_01-25.log)
+    - [x] Agent logs: [log/jcagent_2021-07-15_01-25.log](log/jcagent_2021-07-15_01-25.log)
 
 4. Add a SSO (SAML) Connector in the JumpCloud Admin Console  
 *Note: You may choose the web-based application of your choice but many applications/services provide free trials and will allow enabling of SAML authentication. For example: Salesforce (Trailhead) or ThousandEyes allow for SAML configurations with free trial accounts.*. 
-   - Configure the SAML authentication on the chosen app/service-side
-   - Validate one of your users created in Task 1 can login to the application through the user’s JumpCloud portal
-   - Create and provide a HAR file of the SAML request
+   - [x] Configure the SAML authentication on the chosen app/service-side
+   - [x] Validate one of your users created in Task 1 can login to the application through the user’s JumpCloud portal
+   - [x] Create and provide a HAR file of the SAML request
       - [out/app.thousandeyes.com_21-07-15_10-10-47.har](out/app.thousandeyes.com_21-07-15_10-10-47.har)
 
 ## Devon's Feedback
