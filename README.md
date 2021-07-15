@@ -63,9 +63,14 @@ python scripts/demo_org_setup.py
   - We’re trying to determine what type of beer is most popular with our customers so we can determine what our `next experimental beer` should be! Can you provide us with an array of objects that include the `beer name`, `type`, and `number of customers` where that beer is their favorite?
       - ```json
         [
-          { "name": "Super Haze", "type": "Hazy IPA", "count": 115 }, 
-          { "name": "Musical Mosaic", "type": "IPA", "count": 33 }, 
+          { "name": "Super Haze", "type": "Hazy IPA", "count": 115 },
+          { "name": "Musical Mosaic", "type": "IPA", "count": 33 },
           { "name": "Slam Dunk", "type": "Dunkelweizen", "count": 20 },
+          { "name": "Peruvian Pils", "type": "Pilsner", "count": 34 },
+          { "name": "Kasual Kolsch", "type": "Kolsch", "count": 30 },
+          { "name": "Down N Out Stout", "type": "Stout", "count": 34 },
+          { "name": "El Jefe", "type": "Hefeweizen", "count": 16 },
+          { "name": "Leisurely Lager", "type": "Lager", "count": 19 }
         ]
         ```
 2. Provide the output results for each of these requests.
