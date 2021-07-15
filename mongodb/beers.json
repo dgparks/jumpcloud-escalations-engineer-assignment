@@ -1,0 +1,8 @@
+{"_id":{"$oid":"6070941a92f3b0eaf535a86b"},"name":"Super Haze","type":"Hazy IPA","beer_tapped_date":{"$date":"2021-04-09T17:51:11.087Z"},"beer_brewed_date":{"$date":"2021-03-30T17:51:11.087Z"}}
+{"_id":{"$oid":"6070941a92f3b0eaf535a86c"},"name":"Musical Mosaic","type":"IPA","beer_tapped_date":{"$date":"2021-04-09T17:51:11.087Z"},"beer_brewed_date":{"$date":"2021-03-30T17:51:11.087Z"}}
+{"_id":{"$oid":"6070941a92f3b0eaf535a86d"},"name":"Kasual Kolsch","type":"Kolsch","beer_tapped_date":{"$date":"2021-04-09T17:51:11.087Z"},"beer_brewed_date":{"$date":"2021-04-02T17:51:11.087Z"}}
+{"_id":{"$oid":"6070941a92f3b0eaf535a86e"},"name":"Peruvian Pils","type":"Pilsner","beer_tapped_date":{"$date":"2021-04-09T17:51:11.087Z"},"beer_brewed_date":{"$date":"2021-03-27T17:51:11.087Z"}}
+{"_id":{"$oid":"6070941a92f3b0eaf535a86f"},"name":"Leisurely Lager","type":"Lager","beer_tapped_date":{"$date":"2021-04-09T17:51:11.088Z"},"beer_brewed_date":{"$date":"2021-03-28T17:51:11.088Z"}}
+{"_id":{"$oid":"6070941a92f3b0eaf535a870"},"name":"Down N Out Stout","type":"Stout","beer_tapped_date":{"$date":"2021-04-09T17:51:11.088Z"},"beer_brewed_date":{"$date":"2021-03-22T17:51:11.088Z"}}
+{"_id":{"$oid":"6070941a92f3b0eaf535a871"},"name":"Slam Dunk","type":"Dunkelweizen","beer_tapped_date":{"$date":"2021-04-09T17:51:11.088Z"},"beer_brewed_date":{"$date":"2021-03-30T17:51:11.088Z"}}
+{"_id":{"$oid":"6070941a92f3b0eaf535a872"},"name":"El Jefe","type":"Hefeweizen","beer_tapped_date":{"$date":"2021-04-09T17:51:11.088Z"},"beer_brewed_date":{"$date":"2021-03-31T17:51:11.088Z"}}
