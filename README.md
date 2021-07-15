@@ -9,8 +9,9 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-# NOTE: normally we would add the /out and /log folders to .gitignore,
-#       but they have been included in the repo for our purposes
+# NOTE1: normally we would add the /out and /log folders to .gitignore,
+#        but they have been included in the repo for our purposes
+# NOTE2: the below assumes that you have correctly configured the mongodb
 #
 # send a new brewery analysis to the /out folder
 
