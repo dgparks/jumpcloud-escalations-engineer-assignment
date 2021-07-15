@@ -32,27 +32,27 @@ python scripts/demo_org_setup.py
     - Script: [scripts/brewery.py](scripts/brewery.py), Log: [log/brewery-2021-07-15_09-14-29.096275.log](log/brewery-2021-07-15_09-14-29.096275.log)
   - [x] We’re coming out with a new hoppy delicious IPA. To let our customers know, we need two mailing lists.
     - [x] One that includes the email addresses of `all of our customers`
-      - `Devon's Note`: Since it's a mailing list (ostenibly something we would like to access programatically), I decided to leave the output as a list of objects, and I included the `first_name` and `last_name` of the customers too. If we want just a comma-separated list of strings (email addresses only), it's quite simple to add a line or two to achieve that.
-      ```json
-      [
-        { "first_name": "Jessica", "last_name": "Patterson", "email": "jpatterson@notarealemail.com" },
-        { "first_name": "Alessandro", "last_name": "Leon", "email": "aleon@notarealemail.com" },
-        { "first_name": "Konner", "last_name": "Marks", "email": "kmarks@notarealemail.com" },
-        ...
-      ]
-      ```
-      See full output here: [out/brewery-2021-07-15_09-14-29.096275.json](out/brewery-2021-07-15_09-14-29.096275.json)
+      - [x] `Devon's Note`: Since it's a mailing list (ostenibly something we would like to access programatically), I decided to leave the output as a list of objects, and I included the `first_name` and `last_name` of the customers too. If we want just a comma-separated list of strings (email addresses only), it's quite simple to add a line or two to achieve that.
+        ```json
+        [
+          { "first_name": "Jessica", "last_name": "Patterson", "email": "jpatterson@notarealemail.com" },
+          { "first_name": "Alessandro", "last_name": "Leon", "email": "aleon@notarealemail.com" },
+          { "first_name": "Konner", "last_name": "Marks", "email": "kmarks@notarealemail.com" },
+          ...
+        ]
+        ```
+        See full output here: [out/brewery-2021-07-15_09-14-29.096275.json](out/brewery-2021-07-15_09-14-29.096275.json)
     - [x] Another that includes only the email addresses for customers whose `favorite beer is an IPA`.
-      - `Devon's Note`: Again, I interpreted this to mean "includes (at least) the email addresses, *but only for those customers whose favorite beer is an IPA*", as opposed to the more literal reading in which we return *only the email addresses*. In a production environment, I would of course seek clarification from stakeholders before unilaterally deciding which data to return.
-      ```json
-      [
-        { "first_name": "Kelton", "last_name": "Cobb", "email": "kcobb@notarealemail.com", "type": "IPA" },
-        { "first_name": "Judah", "last_name": "Chung", "email": "jchung@notarealemail.com", "type": "IPA" },
-        { "first_name": "Santino", "last_name": "Ryan", "email": "sryan@notarealemail.com", "type": "IPA" },
-        ...
-      ]
-      ```
-      See full output here: [out/brewery-2021-07-15_09-14-29.096275.json](out/brewery-2021-07-15_09-14-29.096275.json)
+      - [x] `Devon's Note`: Again, I interpreted this to mean "includes (at least) the email addresses, *but only for those customers whose favorite beer is an IPA*", as opposed to the more literal reading in which we return *only the email addresses*. In a production environment, I would of course seek clarification from stakeholders before unilaterally deciding which data to return.
+        ```json
+        [
+          { "first_name": "Kelton", "last_name": "Cobb", "email": "kcobb@notarealemail.com", "type": "IPA" },
+          { "first_name": "Judah", "last_name": "Chung", "email": "jchung@notarealemail.com", "type": "IPA" },
+          { "first_name": "Santino", "last_name": "Ryan", "email": "sryan@notarealemail.com", "type": "IPA" },
+          ...
+        ]
+        ```
+        See full output here: [out/brewery-2021-07-15_09-14-29.096275.json](out/brewery-2021-07-15_09-14-29.096275.json)
   - [x] We need to gather some data on our tap rooms to show which is the `most popular location`. We need to know how many customers have frequented each location between 1/1/2021 - 4/1/2021.
     ```json
     [ 
@@ -79,7 +79,7 @@ python scripts/demo_org_setup.py
 ## Part 2: Interacting with JumpCloud
 1. Using the programming language of your choice (`Go` or `JavaScript` preferred), complete the following and provide your solution for each:
    - `Devon's Note`: Since there isn't a JS SDK, I elected to use the Python SDK to save time and avoid reinventing the wheel. I certainly *could* have written an ad hoc mini-library in JS to handle auth and endpoint connections, but that seemed a bit outside the scope of the intention here. Let me know if you'd like me to reimplement this in something other than Python.
-   - View method declarations in [scripts/demo_org_setup.py](scripts/demo_org_setup.py)
+   - [x] View method declarations in [scripts/demo_org_setup.py](scripts/demo_org_setup.py)
    - [x] `Create and activate 2 Users`
       ```python
       create_and_activate_users([
@@ -123,6 +123,7 @@ python scripts/demo_org_setup.py
       ```
 
 2. Log in to the system as the JumpCloud managed user
+    - [x] Done.
 
 3. Set agent logs to DEBUG on system and provide a copy of agent logs
     - `Devon's Note`: I could not find any information about setting the agent logs to DEBUG.
@@ -133,7 +134,7 @@ python scripts/demo_org_setup.py
    - [x] Configure the SAML authentication on the chosen app/service-side
    - [x] Validate one of your users created in Task 1 can login to the application through the user’s JumpCloud portal
    - [x] Create and provide a HAR file of the SAML request
-      - [out/app.thousandeyes.com_21-07-15_10-10-47.har](out/app.thousandeyes.com_21-07-15_10-10-47.har)
+      - [x] [out/app.thousandeyes.com_21-07-15_10-10-47.har](out/app.thousandeyes.com_21-07-15_10-10-47.har)
 
 ## Devon's Feedback
 - `graph_user_associations_list` (jcapi-python) has a required positional argument, targets, that is supposed to be a list of strings. But if we pass a list of 2 or more strings, we get the following response:
