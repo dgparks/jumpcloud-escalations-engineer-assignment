@@ -1,0 +1,235 @@
+2021/07/15 00:41:07 [99880] [INFO] enabling memory profiling on SIGUSR1
+2021/07/15 00:41:07 [99880] [INFO] ---------------------
+2021/07/15 00:41:07 [99880] [INFO] Starting agent daemon
+2021/07/15 00:41:07 [99880] [INFO] ---------------------
+2021/07/15 00:41:07 [99880] [INFO] Build version: 0.179.3
+2021/07/15 00:41:07 [99880] [INFO] Build date: Mon Jul 12 17:55:50 UTC 2021
+2021/07/15 00:41:07 [99880] [INFO] Loading conf from /opt/jc/jcagent.conf
+2021/07/15 00:41:07 [99880] [INFO] Could not load registration attempts counter. Assuming this is the first attempt and not applying backoff
+2021/07/15 00:41:07 [99880] [INFO] Certificate read failed, err='Could not read the client certificate PEM file '/opt/jc/client.crt', err='Could not read PEM file, err='open /opt/jc/client.crt: no such file or directory'''
+2021/07/15 00:41:07 [99880] [INFO] REGISTRATION: No existing valid certificate found, initializing it
+2021/07/15 00:41:07 [99880] [INFO] REGISTRATION: Creating client certificates
+2021/07/15 00:41:08 [99880] [INFO] REGISTRATION: Client certificates created and signed successfully
+2021/07/15 00:41:08 [99880] [INFO] REGISTRATION: Registering new system
+2021/07/15 00:41:08 [99880] [INFO] systemreport.reporter: running system report
+2021/07/15 00:41:08 [99880] [ERROR] systemreport.reporter: error collecting data: Get "": unsupported protocol scheme ""
+2021/07/15 00:41:10 [99880] [WARN] secure token does not exist for user: _jumpcloudserviceaccount
+2021/07/15 00:41:10 [99880] [INFO] Necessary structs are nil. Will not attempt to get ServiceAccount data
+2021/07/15 00:41:10 [99880] [INFO] REGISTRATION: System registration completed successfully
+2021/07/15 00:41:10 [99880] [INFO] REGISTRATION: Successfully created certificate and completed registration.
+2021/07/15 00:41:10 [99880] [INFO] system OS info: Mac OS X 10.12.5
+2021/07/15 00:41:10 [99880] [INFO] Unable to get osquery version, error: failed to get osquery version: bash: /opt/jc/bin/jcosqueryi: No such file or directory
+2021/07/15 00:41:10 [99880] [INFO] attempting to install jcosqueryi...
+2021/07/15 00:41:12 [99880] [INFO] successfully installed jcosqueryi
+2021/07/15 00:41:12 [99880] [INFO] HTTP client successfully initialized its TLS config.
+2021/07/15 00:41:12 [99880] [INFO] using new path construction method
+2021/07/15 00:41:12 [99880] [INFO] Using migrations path of file:///opt/jc//migrations
+2021/07/15 00:41:12 [99880] [INFO] Database has no existing version. Migrating to version 11
+2021/07/15 00:41:12 [99880] [INFO] Migrating database from version 0 to 11
+2021/07/15 00:41:12 [99880] [INFO] No zero touch username found: exit status 1
+2021/07/15 00:41:12 [99880] [INFO] MD5SumMonitor Init
+2021/07/15 00:41:12 [99880] [INFO] MD5SumMonitor Init complete
+2021/07/15 00:41:12 [99880] [INFO] Agent Init - systemKey='60efbc65c8f52e160eaecf50'
+2021/07/15 00:41:12 [99880] [INFO] WorkflowManager Init
+2021/07/15 00:41:12 [99880] [INFO] WorkflowManager Init complete
+2021/07/15 00:41:12 [99880] [INFO] Activating jc login window on agent startup
+2021/07/15 00:41:12 [99880] [INFO] activated JC login window
+2021/07/15 00:41:12 [99880] [INFO] Agent Init complete
+2021/07/15 00:41:12 [99880] [INFO] Agent Start
+2021/07/15 00:41:12 [99880] [INFO] JCClient Start
+2021/07/15 00:41:12 [99880] [INFO] CertificateChecker Start
+2021/07/15 00:41:12 [99880] [INFO] CertificateChecker Start complete
+2021/07/15 00:41:12 [99880] [INFO] JCClient Start complete
+2021/07/15 00:41:12 [99880] [INFO] WorkflowManager Start complete
+2021/07/15 00:41:12 [99880] [INFO] UserManagement Start
+2021/07/15 00:41:12 [99880] [INFO] UserManagement Start complete
+2021/07/15 00:41:12 [99880] [INFO] Dispatcher Start
+2021/07/15 00:41:12 [99880] [INFO] Dispatcher Start complete
+2021/07/15 00:41:12 [99880] [INFO] LocalListener Start
+2021/07/15 00:41:12 [99880] [INFO] Attempting to listen to socket at path /tmp/jumpcloud-socket
+2021/07/15 00:41:12 [99880] [INFO] softwareapps.manager.loadPersistedSoftwareAppConf() - loaded SoftwareAppConf: {Checksum: Configs[]:}
+2021/07/15 00:41:12 [99880] [INFO] Listening to unix socket at /tmp/jumpcloud-socket
+2021/07/15 00:41:12 [99880] [INFO] LocalListener Start Complete
+2021/07/15 00:41:12 [99880] [INFO] LocalGrpcServer Start
+2021/07/15 00:41:12 [99880] [INFO] Attempting to listen to socket at path /tmp/jumpcloud-grpc
+2021/07/15 00:41:12 [99880] [INFO] Listening to unix socket at /tmp/jumpcloud-grpc
+2021/07/15 00:41:12 [99880] [INFO] LocalGrpcServer Start Complete
+2021/07/15 00:41:12 [99880] [INFO] [profiles watcher] starting logstream
+2021/07/15 00:41:12 [99880] [INFO] Starting mdmReport reporter
+2021/07/15 00:41:12 [99880] [INFO] [mdmReport] running report
+2021/07/15 00:41:12 [99880] [INFO] starting policy manager
+2021/07/15 00:41:12 [99880] [INFO] softwareapps.manager.Start() - start
+2021/07/15 00:41:12 [99880] [INFO] softwareapps.manager.SendConfigs() - start
+2021/07/15 00:41:12 [99880] [INFO] softwareapps.manager.SendConfigs() - end
+2021/07/15 00:41:12 [99880] [INFO] policies manager received a request to update its policy conf
+2021/07/15 00:41:12 [99880] [INFO] requesting policy conf from agent server
+2021/07/15 00:41:12 [99880] [INFO] softwareapps.manager.Start() - end
+2021/07/15 00:41:12 [99880] [INFO] starting FDE manager
+2021/07/15 00:41:12 [99880] [ERROR] [mdmReport:associationToken] getting settings profile: exit status 1
+2021/07/15 00:41:12 [99880] [WARN] [mdmReport] collecting data: exit status 1
+2021/07/15 00:41:12 [99880] [WARN] [mdmReport] sending report: exit status 1
+2021/07/15 00:41:12 [99880] [INFO] Processing user updates
+2021/07/15 00:41:13 [99880] [INFO] policies manager received a request to force update policies
+2021/07/15 00:41:13 [99880] [INFO] Incoming Policy Conf:
+          Bundle: &{Checksum: URL:}
+        Checksum: 
+        Policies:
+2021/07/15 00:41:13 [99880] [ERROR] skipping update policies: policy conf bundle not valid
+2021/07/15 00:41:13 [99880] [INFO] Starting systemreport service
+2021/07/15 00:41:13 [99880] [INFO] Agent Start complete
+2021/07/15 00:41:13 [99880] [INFO] AgentVersion=0.179.3
+2021/07/15 00:41:13 [99880] [INFO] systemreport manager: running system report
+2021/07/15 00:41:13 [99880] [INFO] systemreport.reporter: running system report
+2021/07/15 00:41:13 [99880] [WARN] failed to read conf from disk on startup: open /opt/jc/systemInsightsConf.json: no such file or directory
+2021/07/15 00:41:13 [99880] [INFO] bypassing system insights boot delay
+2021/07/15 00:41:13 [99880] [INFO] Processing adding new users, addUsers=map[]
+2021/07/15 00:41:13 [99880] [INFO] Processing user takeovers, takeoverUsers=map[]
+2021/07/15 00:41:13 [99880] [INFO] Processing already managed, updateAlreadyManaged=map[]
+2021/07/15 00:41:13 [99880] [INFO] Processing expired password users, expiredPasswordUsers=map[]
+2021/07/15 00:41:13 [99880] [INFO] Processing disabling users, disableUsers=map[]
+2021/07/15 00:41:13 [99880] [INFO] Processing lockout users, lockoutUsers=map[]
+2021/07/15 00:41:13 [99880] [INFO] Posting notification to server
+2021/07/15 00:41:13 [99880] [INFO] User updates complete
+2021/07/15 00:41:13 [99880] [INFO] Processing event AUTH_CONF_CHANGED with handler Lockout Handler
+2021/07/15 00:41:13 [99880] [INFO] Finished processing event AUTH_CONF_CHANGED with handler Lockout Handler
+2021/07/15 00:41:13 [99880] [INFO] Processing event AUTH_CONF_CHANGED with handler User Update Handler
+2021/07/15 00:41:13 [99880] [INFO] Finished processing event AUTH_CONF_CHANGED with handler User Update Handler
+2021/07/15 00:41:13 [99880] [INFO] Processing event AUTH_CONF_CHANGED with handler Event Logger
+2021/07/15 00:41:13 [99880] [INFO] AuthConf Changed
+2021/07/15 00:41:13 [99880] [INFO] Finished processing event AUTH_CONF_CHANGED with handler Event Logger
+2021/07/15 00:41:13 [99880] [INFO] system insights manager successfully updated its conf
+2021/07/15 00:41:13 [99880] [INFO] system insights reporting chrome_extensions on system
+2021/07/15 00:41:14 [99880] [INFO] system insights reporting etc_hosts on system
+2021/07/15 00:41:14 [99880] [INFO] system insights reporting groups on system
+2021/07/15 00:41:15 [99880] [WARN] secure token does not exist for user: _jumpcloudserviceaccount
+2021/07/15 00:41:15 [99880] [WARN] Unable to set service account record data. There is no service account record
+2021/07/15 00:41:15 [99880] [INFO] systemreport: posting report to server
+2021/07/15 00:41:15 [99880] [INFO] system insights reporting interface_addresses on system
+2021/07/15 00:41:16 [99880] [INFO] system insights reporting interface_details on system
+2021/07/15 00:41:16 [99880] [INFO] system insights reporting kernel_info on system
+2021/07/15 00:41:16 [99880] [INFO] system insights reporting logged_in_users on system
+2021/07/15 00:41:17 [99880] [INFO] system insights reporting os_version on system
+2021/07/15 00:41:17 [99880] [INFO] system insights reporting python_packages on system
+2021/07/15 00:41:17 [99880] [INFO] system insights reporting system_info on system
+2021/07/15 00:41:17 [99880] [INFO] policies manager received a request to update its policy conf
+2021/07/15 00:41:17 [99880] [INFO] requesting policy conf from agent server
+2021/07/15 00:41:17 [99880] [INFO] policies manager received a request to force update policies
+2021/07/15 00:41:17 [99880] [INFO] Incoming Policy Conf:
+          Bundle: &{Checksum:b65376da5875204d36a87415e71046de URL:https://s3.amazonaws.com/jumpcloud-media/policies/v2.21.0/jumpcloud-policies-darwin-v2.21.0.tgz}
+        Checksum: b7c249d92be32821757967a1ec5de960859dc01b4b6e2fe63028e9f679ebf2c0
+        Policies:
+2021/07/15 00:41:17 [99880] [INFO] updating policies with: force=true, valid=false
+2021/07/15 00:41:18 [99880] [ERROR] error when closing file /opt/jc/policies/jumpcloud-policies.tgz: close /opt/jc/policies/jumpcloud-policies.tgz: file already closed
+2021/07/15 00:41:18 [99880] [INFO] downloaded policies bundle: https://s3.amazonaws.com/jumpcloud-media/policies/v2.21.0/jumpcloud-policies-darwin-v2.21.0.tgz
+2021/07/15 00:41:18 [99880] [INFO] updated in memory policy conf with incoming conf
+2021/07/15 00:41:18 [99880] [INFO] wrote incoming conf to disk
+2021/07/15 00:41:23 [99880] [INFO] system insights reporting uptime on system
+2021/07/15 00:41:23 [99880] [INFO] system insights reporting user_groups on system
+2021/07/15 00:41:23 [99880] [INFO] system insights reporting alf on system
+2021/07/15 00:41:24 [99880] [INFO] system insights reporting alf_exceptions on system
+2021/07/15 00:41:24 [99880] [INFO] system insights reporting alf_explicit_auths on system
+2021/07/15 00:41:24 [99880] [INFO] system insights reporting apps on system
+2021/07/15 00:41:29 [99880] [INFO] system insights reporting authorized_keys on system
+2021/07/15 00:41:29 [99880] [INFO] system insights reporting battery on system
+2021/07/15 00:41:30 [99880] [INFO] system insights reporting browser_plugins on system
+2021/07/15 00:41:30 [99880] [INFO] system insights reporting certificates on system
+2021/07/15 00:41:37 [99880] [INFO] system insights reporting crashes on system
+2021/07/15 00:41:37 [99880] [INFO] system insights reporting cups_destinations on system
+2021/07/15 00:41:38 [99880] [INFO] system insights reporting disk_encryption on system
+2021/07/15 00:41:38 [99880] [INFO] system insights reporting dns_resolvers on system
+2021/07/15 00:41:38 [99880] [INFO] system insights reporting firefox_addons on system
+2021/07/15 00:41:39 [99880] [INFO] system insights reporting launchd on system
+2021/07/15 00:41:40 [99880] [INFO] system insights reporting managed_policies on system
+2021/07/15 00:41:41 [99880] [INFO] system insights reporting mounts on system
+2021/07/15 00:41:41 [99880] [INFO] system insights reporting safari_extensions on system
+2021/07/15 00:41:41 [99880] [INFO] system insights reporting shared_folders on system
+2021/07/15 00:41:42 [99880] [INFO] system insights reporting sharing_preferences on system
+2021/07/15 00:41:42 [99880] [INFO] system insights reporting sip_config on system
+2021/07/15 00:41:42 [99880] [INFO] system insights reporting startup_items on system
+2021/07/15 00:41:43 [99880] [INFO] system insights reporting system_controls on system
+2021/07/15 00:41:43 [99880] [INFO] system insights reporting usb_devices on system
+2021/07/15 00:41:44 [99880] [INFO] system insights reporting user_ssh_keys on system
+2021/07/15 00:41:44 [99880] [INFO] system insights reporting wifi_networks on system
+2021/07/15 00:41:45 [99880] [INFO] system insights reporting wifi_status on system
+2021/07/15 00:41:45 [99880] [INFO] system insights reporting users on system
+2021/07/15 01:06:30 [99880] [INFO] Processing user updates
+2021/07/15 01:06:31 [99880] [INFO] Processing adding new users, addUsers=map[arthur.schopenhauer:0xc00057a140]
+2021/07/15 01:06:32 [99880] [INFO] Processing event PASSWORD_CHANGE with handler Password Change Listener
+2021/07/15 01:06:32 [99880] [INFO] Modified permissions for directory /Users/arthur.schopenhauer/Desktop
+2021/07/15 01:06:32 [99880] [INFO] Modified permissions for directory /Users/arthur.schopenhauer/Documents
+2021/07/15 01:06:32 [99880] [INFO] Modified permissions for directory /Users/arthur.schopenhauer/Downloads
+2021/07/15 01:06:32 [99880] [INFO] Modified permissions for directory /Users/arthur.schopenhauer/Library
+2021/07/15 01:06:32 [99880] [INFO] Modified permissions for directory /Users/arthur.schopenhauer/Movies
+2021/07/15 01:06:32 [99880] [INFO] Modified permissions for directory /Users/arthur.schopenhauer/Music
+2021/07/15 01:06:32 [99880] [INFO] Modified permissions for directory /Users/arthur.schopenhauer/Pictures
+2021/07/15 01:06:32 [99880] [INFO] Modified permissions for directory /Users/arthur.schopenhauer/Public
+2021/07/15 01:06:32 [99880] [INFO] Processing user takeovers, takeoverUsers=map[]
+2021/07/15 01:06:32 [99880] [INFO] Processing already managed, updateAlreadyManaged=map[]
+2021/07/15 01:06:32 [99880] [INFO] Processing expired password users, expiredPasswordUsers=map[]
+2021/07/15 01:06:32 [99880] [INFO] Processing disabling users, disableUsers=map[]
+2021/07/15 01:06:32 [99880] [INFO] Processing lockout users, lockoutUsers=map[]
+2021/07/15 01:06:32 [99880] [INFO] Posting notification to server
+2021/07/15 01:06:32 [99880] [INFO] User updates complete
+2021/07/15 01:06:32 [99880] [INFO] Restoring password change for managed user arthur.schopenhauer
+2021/07/15 01:06:32 [99880] [INFO] Finished processing event PASSWORD_CHANGE with handler Password Change Listener
+2021/07/15 01:06:32 [99880] [INFO] Processing event PASSWORD_CHANGE with handler Event Logger
+2021/07/15 01:06:32 [99880] [INFO] Password change attempt occurred for user arthur.schopenhauer
+2021/07/15 01:06:32 [99880] [INFO] Finished processing event PASSWORD_CHANGE with handler Event Logger
+2021/07/15 01:06:32 [99880] [INFO] Processing event AUTH_CONF_CHANGED with handler Lockout Handler
+2021/07/15 01:06:32 [99880] [INFO] Finished processing event AUTH_CONF_CHANGED with handler Lockout Handler
+2021/07/15 01:06:32 [99880] [INFO] Processing event AUTH_CONF_CHANGED with handler User Update Handler
+2021/07/15 01:06:32 [99880] [INFO] Finished processing event AUTH_CONF_CHANGED with handler User Update Handler
+2021/07/15 01:06:32 [99880] [INFO] Processing event AUTH_CONF_CHANGED with handler Event Logger
+2021/07/15 01:06:32 [99880] [INFO] AuthConf Changed
+2021/07/15 01:06:32 [99880] [INFO] Finished processing event AUTH_CONF_CHANGED with handler Event Logger
+2021/07/15 01:11:12 [99880] [INFO] softwareapps.manager.SendConfigs() - start
+2021/07/15 01:11:12 [99880] [INFO] softwareapps.manager.SendConfigs() - end
+2021/07/15 01:11:12 [99880] [INFO] [mdmReport] running report
+2021/07/15 01:11:12 [99880] [ERROR] [mdmReport:associationToken] getting settings profile: exit status 1
+2021/07/15 01:11:12 [99880] [WARN] [mdmReport] collecting data: exit status 1
+2021/07/15 01:11:12 [99880] [WARN] [mdmReport] sending report: exit status 1
+2021/07/15 01:14:46 [99880] [INFO] Attempting to create service account or update user secure token in PamAuth handler
+2021/07/15 01:14:46 [99880] [INFO] got EOF, shutting down local listener
+2021/07/15 01:14:46 [99880] [INFO] Processing event LOGIN with handler Audit Manager
+2021/07/15 01:14:46 [99880] [INFO] Finished processing event LOGIN with handler Audit Manager
+2021/07/15 01:14:46 [99880] [INFO] Processing event LOGIN with handler Lockout Handler
+
+2021/07/15 01:14:46 [99880] [INFO] Finished processing event LOGIN with handler Lockout Handler
+2021/07/15 01:14:46 [99880] [INFO] Processing event LOGIN with handler Policies Event Handler
+2021/07/15 01:14:46 [99880] [INFO] Requesting AuthenticationToken
+2021/07/15 01:14:46 [99880] [INFO] policies manager received a request to run policies that have a LOGIN monitor type
+2021/07/15 01:14:46 [99880] [INFO] enqueued request to run all policies with a LOGIN monitor
+2021/07/15 01:14:46 [99880] [INFO] Finished processing event LOGIN with handler Policies Event Handler
+2021/07/15 01:14:46 [99880] [INFO] Processing event LOGIN with handler Event Logger
+2021/07/15 01:14:46 [99880] [INFO] User arthur.schopenhauer logged in from <nil>, process name: 
+2021/07/15 01:14:46 [99880] [INFO] Finished processing event LOGIN with handler Event Logger
+2021/07/15 01:14:46 [99880] [INFO] AuthenticationToken operation complete
+2021/07/15 01:14:57 [99880] [INFO] Processing event PASSWORD_CHANGE with handler Password Change Listener
+2021/07/15 01:14:57 [99880] [INFO] Finished processing event PASSWORD_CHANGE with handler Password Change Listener
+2021/07/15 01:14:57 [99880] [INFO] Processing event PASSWORD_CHANGE with handler Event Logger
+2021/07/15 01:14:57 [99880] [INFO] Password change attempt occurred for user _mbsetupuser
+2021/07/15 01:14:57 [99880] [INFO] Finished processing event PASSWORD_CHANGE with handler Event Logger
+2021/07/15 01:14:58 [99880] [INFO] Attempting to create service account or update user secure token in PamAuth handler
+2021/07/15 01:14:58 [99880] [INFO] got EOF, shutting down local listener
+2021/07/15 01:14:58 [99880] [INFO] Requesting AuthenticationToken
+2021/07/15 01:14:58 [99880] [WARN] Could not request AuthenticationToken, user _mbsetupuser not found
+2021/07/15 01:14:58 [99880] [INFO] Processing event LOGIN with handler Audit Manager
+2021/07/15 01:14:58 [99880] [INFO] Finished processing event LOGIN with handler Audit Manager
+2021/07/15 01:14:58 [99880] [INFO] Processing event LOGIN with handler Lockout Handler
+2021/07/15 01:14:58 [99880] [INFO] Finished processing event LOGIN with handler Lockout Handler
+2021/07/15 01:14:58 [99880] [INFO] Processing event LOGIN with handler Policies Event Handler
+2021/07/15 01:14:58 [99880] [INFO] enqueued request to run all policies with a LOGIN monitor
+2021/07/15 01:14:58 [99880] [INFO] Finished processing event LOGIN with handler Policies Event Handler
+2021/07/15 01:14:58 [99880] [INFO] Processing event LOGIN with handler Event Logger
+2021/07/15 01:14:58 [99880] [INFO] policies manager received a request to run policies that have a LOGIN monitor type
+2021/07/15 01:14:58 [99880] [INFO] User _mbsetupuser logged in from <nil>, process name: 
+2021/07/15 01:14:58 [99880] [INFO] Finished processing event LOGIN with handler Event Logger
+2021/07/15 01:14:58 [99880] [INFO] got EOF, shutting down local listener
+2021/07/15 01:14:58 [99880] [INFO] got EOF, shutting down local listener
+2021/07/15 01:15:00 [99880] [INFO] Processing event PASSWORD_CHANGE with handler Password Change Listener
+2021/07/15 01:15:00 [99880] [INFO] Finished processing event PASSWORD_CHANGE with handler Password Change Listener
+2021/07/15 01:15:00 [99880] [INFO] Processing event PASSWORD_CHANGE with handler Event Logger
+2021/07/15 01:15:00 [99880] [INFO] Password change attempt occurred for user _mbsetupuser
+2021/07/15 01:15:00 [99880] [INFO] Finished processing event PASSWORD_CHANGE with handler Event Logger
+2021/07/15 01:24:57 [99880] [INFO] Loaded configuration for agent 60efbc65c8f52e160eaecf50
+2021/07/15 01:25:53 [99880] [INFO] Users Home Directory: /var/root

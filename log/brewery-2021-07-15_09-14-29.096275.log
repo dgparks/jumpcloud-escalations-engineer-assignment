@@ -1,0 +1,5 @@
+INFO:root:Successfully retrieved 301 patrons.
+INFO:root:Successfully retrieved 33 ipa_lovers.
+INFO:root:Successfully retrieved taproom_visits.
+INFO:root:Successfully retrieved beer_stats.
+INFO:root:Successfully wrote 'brewery' to 'out/brewery-2021-07-15_09-14-29.096275.json'
