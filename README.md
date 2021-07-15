@@ -29,10 +29,10 @@ python scripts/demo_org_setup.py
 ```
 ## Part 1: Database Queries
 1. Create and provide a `script` with `logging` to achieve each of the following:
-    - Script: [scripts/brewery.py](scripts/brewery.py), Log: [log/brewery-2021-07-15_09-14-29.096275.log](log/brewery-2021-07-15_09-14-29.096275.log)
+    - [x] Script: [scripts/brewery.py](scripts/brewery.py), Log: [log/brewery-2021-07-15_09-14-29.096275.log](log/brewery-2021-07-15_09-14-29.096275.log)
   - [x] We’re coming out with a new hoppy delicious IPA. To let our customers know, we need two mailing lists.
     - [x] One that includes the email addresses of `all of our customers`
-      - [x] `Devon's Note`: Since it's a mailing list (ostenibly something we would like to access programatically), I decided to leave the output as a list of objects, and I included the `first_name` and `last_name` of the customers too. If we want just a comma-separated list of strings (email addresses only), it's quite simple to add a line or two to achieve that.
+      - `Devon's Note`: Since it's a mailing list (ostenibly something we would like to access programatically), I decided to leave the output as a list of objects, and I included the `first_name` and `last_name` of the customers too. If we want just a comma-separated list of strings (email addresses only), it's quite simple to add a line or two to achieve that.
         ```json
         [
           { "first_name": "Jessica", "last_name": "Patterson", "email": "jpatterson@notarealemail.com" },
@@ -43,7 +43,7 @@ python scripts/demo_org_setup.py
         ```
         See full output here: [out/brewery-2021-07-15_09-14-29.096275.json](out/brewery-2021-07-15_09-14-29.096275.json)
     - [x] Another that includes only the email addresses for customers whose `favorite beer is an IPA`.
-      - [x] `Devon's Note`: Again, I interpreted this to mean "includes (at least) the email addresses, *but only for those customers whose favorite beer is an IPA*", as opposed to the more literal reading in which we return *only the email addresses*. In a production environment, I would of course seek clarification from stakeholders before unilaterally deciding which data to return.
+      - `Devon's Note`: Again, I interpreted this to mean "includes (at least) the email addresses, *but only for those customers whose favorite beer is an IPA*", as opposed to the more literal reading in which we return *only the email addresses*. In a production environment, I would of course seek clarification from stakeholders before unilaterally deciding which data to return.
         ```json
         [
           { "first_name": "Kelton", "last_name": "Cobb", "email": "kcobb@notarealemail.com", "type": "IPA" },
