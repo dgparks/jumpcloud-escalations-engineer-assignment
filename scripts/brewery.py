@@ -6,21 +6,37 @@ client = pymongo.MongoClient('mongodb://localhost:27017/')
 db = client['brewery']
 
 def main():
-    print("\nname and email of every patron:")
-    all_patrons = db.patrons.find({}, {'_id': 0, 'full_name': 1, 'email': 1})
-    print(all_patrons)
-    
-    print("\nname and email of every patron whose favorite beer is IPA")
-    for lover in get_ipa_lovers():
-        print(lover)
+    now = str(datetime.now()).replace(' ', '_').replace(':', "-")
+    with open ('out/brewery-{}.txt'.format(now), 'w') as f:
 
-    print("\nper taproom count of patrons that last visited between 1/1/2021 - 4/1/2021")
-    for taproom in get_taproom_visits(datetime(2021, 1, 1, 0, 0, 0), datetime(2021, 4, 1, 0, 0, 0)):
-        print(taproom)
+        #
+        # ALL PATRONS
+        #
+        f.write("\nname and email of every patron:\n")
+        all_patrons = db.patrons.find({}, {'_id': 0, 'full_name': 1, 'email': 1})
+        for patron in all_patrons:
+            f.write(str(patron) + '\n')
+        
+        #
+        # IPA LOVERS
+        #
+        f.write("\nname and email of every patron whose favorite beer is IPA:\n")
+        for lover in get_ipa_lovers():
+            f.write(str(lover) + '\n')
 
-    print("\nlist of each beer with its type and its frequency as a favorite")
-    for beer in get_beer_stats():
-        print(beer)
+        #
+        # TAPROOM VISITS
+        #
+        f.write("\nper taproom count of patrons that last visited between 1/1/2021 - 4/1/2021:\n")
+        for taproom in get_taproom_visits(datetime(2021, 1, 1, 0, 0, 0), datetime(2021, 4, 1, 0, 0, 0)):
+            f.write(str(taproom) + '\n')
+
+        #
+        # BEER STATS
+        #
+        f.write("\nlist of each beer with its type and its frequency as a favorite:\n")
+        for beer in get_beer_stats():
+            f.write(str(beer) + '\n')
 
 def get_ipa_lovers():
     return list(db.patrons.aggregate([
@@ -29,17 +45,17 @@ def get_ipa_lovers():
                 'from': 'beers',
                 'localField': 'favorite_beer',
                 'foreignField': '_id',
-                'as': 'beer'
+                'as': 'favorite_beer_details'
             }
         },
-        { '$unwind': '$beer' },
+        { '$unwind': '$favorite_beer_details' },
         {
             '$project': {
                 '_id': 0,
                 'first_name': 1,
                 'last_name': 1,
                 'email': 1,
-                'type': '$beer.type'
+                'type': '$favorite_beer_details.type'
             }
         },
         { '$match': {'type': "IPA"}}
@@ -67,16 +83,16 @@ def get_beer_stats():
                 'from': 'beers',
                 'localField': 'favorite_beer',
                 'foreignField': '_id',
-                'as': 'beer'
+                'as': 'favorite_beer_details'
             }
         },
-        { '$unwind': '$beer' },
-        { '$group' : { '_id' : '$beer.name', 'count' : {'$sum' : 1}} },
+        { '$unwind': '$favorite_beer_details' },
+        { '$group' : { '_id' : '$favorite_beer_details.name', 'count' : {'$sum' : 1}} },
         {
             '$project': {
                 '_id': 0,
                 'name': "$_id",
-                'type': "$beer.type",
+                'type': "$favorite_beer_details.type",
                 'count': "$count"
             }
         },
